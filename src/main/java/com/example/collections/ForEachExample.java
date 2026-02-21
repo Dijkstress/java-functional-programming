@@ -14,7 +14,7 @@ class Employee {
 }
 
 
-public class ForEach {
+public class ForEachExample {
     public static  void main(String[] args){
         //Using forEach, print only the numbers greater than 25.
 

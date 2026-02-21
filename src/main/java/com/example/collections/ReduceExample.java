@@ -4,7 +4,7 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-public class Reduce {
+public class ReduceExample {
 
     public static void main(String[] args){
         // product of all numbers

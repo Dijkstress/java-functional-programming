@@ -12,7 +12,7 @@ class Student {
     }
 }
 
-public class Map {
+public class MapExample {
     public static void main(String[] args){
         // print each number multiplied by 3
         List<Integer> numbers = List.of(5, 10, 15, 20);

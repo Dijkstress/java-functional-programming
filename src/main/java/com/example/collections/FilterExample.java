@@ -12,7 +12,7 @@ class Product {
     }
 }
 
-public class Filter {
+public class FilterExample {
 
 
     public static void main(String[] args){
