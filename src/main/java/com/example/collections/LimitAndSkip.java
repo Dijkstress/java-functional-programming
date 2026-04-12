@@ -21,6 +21,11 @@ public class LimitAndSkip {
 
         List<Integer> numbers = IntStream.rangeClosed(1, 100).boxed().toList();
         numbers.stream().skip(10).filter(num->num%2==0).limit(5).forEach(System.out::println);
+
+        List<String> words = Arrays.asList("one","four","a","to");
+        words.stream()
+                .sorted(Comparator.comparingInt(String::length)).limit(3).skip(2)
+                .forEach(System.out::println);
     }
 
 }
