@@ -1,0 +1,49 @@
+// requirement
+2 players
+3X3 board
+assign shape
+player takes turn
+if board fills draw
+player wins if 3 cells are same vertically, horizontally, diagonally
+invalid moves
+
+//questions
+
+
+//entity
+Player
+Board
+Shape (can be enum)
+Game ()
+
+//class design
+
+class Player{
+    player_id : int;
+}
+
+class Board {
+    board_id : int
+    Board : arr[3][3]={'_'};
+
+    bool isFilled() return bool;
+
+    void placeShape(int x,int y) // within bound and not filled
+
+    void resetBoard();
+
+    bool checkWin(int x,int y); // within bound
+}
+
+class Game{
+    Player 1;
+    Player 2; // cannot take same shape
+    Board();
+
+    start();
+
+    exit(); // premature exit
+
+}
+
+// extensibility

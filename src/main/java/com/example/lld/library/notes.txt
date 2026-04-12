@@ -1,0 +1,45 @@
+// requirement
+A user can:
+Borrow a book
+Return a book
+Each book can be issued to only one user at a time
+Track which user has which book
+
+// questions?
+is there some time limit
+book not present?
+
+
+// entity
+user, book, library
+
+//class design
+
+class User{
+    id: int
+    name:string
+
+    // getters and setters
+}
+
+class Book{
+    book_id:int
+
+    // getters and setters
+}
+
+class Library{
+    books : Array of [Books]
+    book_to_user_map : Map<book_id,user_id>
+
+    // getters and setters
+    borrowBook(book_id,user_id);
+    returnBook(book_id);
+}
+
+
+// implementation
+
+
+
+// extensibility
