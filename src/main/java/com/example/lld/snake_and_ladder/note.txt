@@ -1,0 +1,20 @@
+Design a snake and ladder game.
+
+//questions
+1. should it be a fixed size board of 10x10, or it should be customizable?
+2. Can there be multiple players?
+3. Is the position of snakes and ladder fixed, or it can be customized
+4. Do I need to display score?
+
+
+// entities
+Player
+Board -> Cells, Snakes, Ladders
+Game ->
+
+
+// what I did
+I created the Player class than the board class with snakes and ladders and dice , game class where I created the games and simulated the game
+I moved out Dice to a interface strategy pattern because dice and have different way to outcome, so I only need roll()
+I moved out Snakes and Ladders to an interface strategy so we can introduce new obstacle say portals later in point
+I moved out the Game building logic to a game builder using Builder design pattern
